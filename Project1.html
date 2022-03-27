@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>I'm Emir Guevara</h1>
+
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">About me</a></li>
+                            <li class="active"><a href="Project1.html">Project 1</a></li>
+							<li class="active"><a href="gallery.html">Gallery</a></li>
+							
+						</ul>
+						<ul class="icons">
+							
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+
+							<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="#">Side-Scrolling 2D Game</a></h2>
+									<p>A 2D adventure game created using C++ for game logics and SDL2 to have low level access 
+										<br> to audio, keyboard, mouse, and graphics</p>
+								</header>
+								<a  class="image main"><img src="images/main.png" alt="" /></a>
+
+							</article>
+	
+
+							<article class="post featured">
+
+								<header class="major">
+									
+									<h2><a href="#">Game Engine</a></h2>
+
+									
+
+									<ul class="actions special">
+										
+										<li><a href="#GameEngine" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+									</ul>
+
+								</header>
+
+
+							</article>
+
+
+
+						<!-- Posts -->
+							<section class="posts">
+
+								
+								<article>
+									
+									<header id="GameEngine">
+										
+										<h2><a >Entity-Component System</a></h2>
+									</header>
+									<a href="github.com/eguevar22" class="image fit"><img src="images/ecs.png" alt="" /></a>
+									<p>A cross-platform game engine such as Unity was not used, but rather an entity-component system 
+										to efficiently manage game world objects using modern C++ features. The code can be found
+											<a href="github.com/eguevar22"> here </a></p>
+
+								</article>
+								<article>
+									<header>
+										
+									<h2><a href="https://www.libsdl.org/index.php">SDL2</a></h2>
+									</header>
+									<a href="https://www.libsdl.org/index.php" class="image fit"><img src="images/SDL_logo.jpg" alt="" /></a>
+									<p>Cross-platform development library designed to provide low level access to audio, keyboard  and graphics. SDL2 allows us to port C++ code to many different operating systems. In this project, it was mainly used to mess with software rendering and tinker game engine programming :)</p>
+
+								</article>
+
+								
+	
+							</section>
+
+							<article class="post featured">
+
+								<header class="major">
+									
+									<h2><a href="#">Animations</a></h2>
+
+									
+
+									<ul class="actions special">
+										
+										<li><a href="#Animations" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+									</ul>
+
+								</header>
+
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+
+								
+								<article>
+									
+									<header id="Animations">
+										
+										<h2><a href="#"> Animated Tiles </a></h2>
+									</header>
+									<a  class="image fit"><img src="images/player_animation.png" alt="" /></a>
+									<a  class="image fit"><img src="images/wolf_animation.png" alt="" /></a>
+									<p>An algorithm runs through the animated tiles and displays a list of Sprites 
+										in sequence to create a frame-by-frame animation. A texture with a png file is passed as input only once, and different animations are displayed depending on the x-y coordinates selected. </p>
+
+								</article>
+								<article>
+									<header>
+										
+										<h2><a >Animation Events</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/doge.png" alt="" /></a>
+									<a href="#" class="image fit"><img src="images/hit.png" alt="" /></a>
+									<p> The game engine handles user input as events. Every time a key is pressed, it runs an animation depending on the situation.
+										For example, running, attacking, falling, etc. There are some animations that can be interrupted, such as running and attacking. 
+										However, other animations cannot be interrupted; this is the case of being
+										hit by an enemy, this animation cannot be stopped until the player hits the ground :)
+									</p>
+
+								</article>
+
+								
+	
+							</section>
+
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="#">Tile Rendering</a></h2>
+
+									
+
+									<ul class="actions special">
+										
+										<li><a href="#Rendering" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+									</ul>
+
+								</header>
+
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+
+								
+								<article>
+									
+									<header id="Rendering">
+										
+										<h2><a href="#"> Algorithm</a></h2>
+									</header>
+									<p>Online tilesets are used to build different maps</p>
+									<a href="#" class="image fit"><img src="images/base_tile.png" alt="" /></a>
+									<p>These tiles are first organized as a texture of 10x100 tiles ( 10 in the x-axis and 100 in the y-axis). 
+										It allows the algorithm to interpret tiles as positions in an image and map them based on coordinates. 
+										In fact, XYY is the format of the coordinates. For example, The tile 129 is 1 in x-axis and 29 in y-axis. </p>
+									<a href="#" class="image fit"><img src="images/ordered_tile.png" alt="" /></a>
+									
+							
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#"> Rendering</a></h2>
+									</header>
+									<p>This is how a layer of a map is created.</p>
+									<a href="#" class="image fit"><img src="images/layer.png" alt="" /></a>
+									<p>Then this layer is translated to coordinates (using software) that the algorithm can interpret and render. It takes 
+										several layers to render a map; one for sky, for ground, objects and one for the ocean. 
+									</p>
+									
+									<a href="#" class="image fit"><img src="images/numbers.png" alt="" /></a>
+									
+							
+								</article>
+
+								
+	
+							</section>
+
+
+
+							
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>188 King St N <br />
+									Waterloo, ON N2J 2Y5</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(226) 507-6720</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">e2guevar@uwaterloo.ca</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+								
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
